@@ -5,15 +5,19 @@ Global Conference Analytics using MS Excel.
 This project contains data related to global conference. The data set consists of speakers on different topics from different locations. As a data analyst, your task in hand is to find a suitable approach and solve the problems given in the attached file. Utilizing engaging storytelling techniques and visually appealing charts with interactive slicers, you'll effectively communicate the significance of the insights and their implications for future conference planning and engagement strategies.
 
 ## Solutions and Approach
-To find the solutions for all the questions asked in the dataset of 3 sheets, 9 Questions. Then, using those solution get insights and finally craft a dashboard. **If you're practicing with same dataset and found yourself confused solving these Qs then my friend, I got you.**
+To find the solutions for all the questions asked in the dataset of 3 sheets, 9 Questions. Then, using those solution get insights and finally craft a dashboard. **If you're practicing with same dataset and found yourself confused solving these Qs then my friend, I got you. I will try explain as detailed as possible.**
 
 ### Q1. The Customer Success Team is eager to gather feedback from attendees for post-conference assessment. They require personal information for a select group of attendees to initiate feedback requests. You are asked to provide them with the information of the below provided Attendee IDs.
-**A1** ![Screenshot 2024-11-21 213724](https://github.com/user-attachments/assets/5a3a62fd-3bad-4d5d-b7fd-8f4a59658840)
+**A1** ![A1](https://github.com/user-attachments/assets/5a3a62fd-3bad-4d5d-b7fd-8f4a59658840)
 
-The approach was simple to this Q, we've been given Lookup Values(Attendee ID) and with the help of Vlookup you can find all rhe info of each Attendee asked in this Q.
+- The approach is simple to this Q, we've been given Lookup Values(Attendee ID) and Table Array(Attendees) using Vlookup you can find Masked Email to Session ID.
+- Then, Session ID as Lookup Value, and Table Array(Sessions) using Vlookup you can find Session Topic, Session Date and Speaker Id.
+- Now Speaker ID as Lookup Value and Table Array(Speakers) again using Vlookup you can find Speaker Name and Field of Expertise.
 
 ## Q2. The management seeks insights into the distribution of attendees across different Tech Fields represented at the conference. Understanding this distribution will help in tailoring future events to cater to specific interests and trends within the tech community. You need to calculate the total number of attendees for each Tech Field and then create a labelled bar chart for it, sorted in descending order.
+**A2** ![A2](https://github.com/user-attachments/assets/c58bc64c-0fc2-410e-a51a-cb66a2bedf85)
 
+kk
 
 ## Q3. Identifying the most and least popular speakers is crucial for understanding attendee preferences. By examining the number of attendees for each speaker, you can determine which sessions attracted the highest and lowest participation rates, thereby informing decisions for future speaker selection. For the speaker with maximum number of attendees and minimun number of attendes, you need to find the values for the below provided columns. Also, write your approach to get the solution.
 
