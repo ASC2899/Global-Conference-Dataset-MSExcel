@@ -1,5 +1,6 @@
 # Global-Conference-Dataset-MSExcel
 Global Conference Analytics using MS Excel.
+
 **If you're practicing with same dataset and found yourself confused solving these Qs then my friend, I got you. I will try to explain as much in details as possible.**
 
 ## Problem Statement
@@ -7,9 +8,13 @@ This project contains data related to global conference. The data set consists o
 
 ## Requirements
 To solve questions of this dataset you need to know the working knowledge of the following:
+
 **Softwares**
+
 - MS Excel
+
 **Functions/Formulas**
+
 - VLOOKUP
 - INDEX
 - MATCH
@@ -22,6 +27,7 @@ To solve questions of this dataset you need to know the working knowledge of the
 We will find the solutions for all the questions asked in the dataset of 3 sheets, 9 Questions. Then, using those solution get insights and finally craft a dashboard.
 
 **Q1. The Customer Success Team is eager to gather feedback from attendees for post-conference assessment. They require personal information for a select group of attendees to initiate feedback requests. You are asked to provide them with the information of the below provided Attendee IDs.**
+
 **A1** ![A1](https://github.com/user-attachments/assets/5a3a62fd-3bad-4d5d-b7fd-8f4a59658840)
 
 - The approach is simple to this Q, we've been given Lookup Values(Attendee ID) and Table Array(Attendees) using VLOOKUP you can find Masked Email to Session ID.
@@ -42,9 +48,14 @@ We will find the solutions for all the questions asked in the dataset of 3 sheet
 
 This Q is my favourite from all other Qs, to solve this Q:
 - First we need to find which Attendee joined which speaker by making a New Column(Speaker ID*) in Attendees sheet, using VLOOKUP in this column taking Session ID(Lookup Value) and Sessions sheet(Table Array).
-- Now this is a bit tricky part, we need to find Speaker ID with maximum and minimum number of attendees, Since there're no Lookup Values we will use a combination of INDEX, MATCH, COUNTIF, MAX and MIN functions. **I've alrady explained this formula in the Solved File in detail make sure to check it out.**
+- Now this is a bit tricky part, we need to find Speaker ID with maximum and minimum number of attendees, Since there're no Lookup Values we will use a combination of INDEX, MATCH, COUNTIF, MAX and MIN functions. 
+
+**I've alrady explained this formula in the Solved File in detail make sure to check it out.**
+
 - Taking Speaker ID(Lookup value) we found earlier and Speakers sheet(Table Array) using VLOOKUP you can find Speaker Name, Country and Field of Expertise.
-- To find Total Attendees and Total Sessions, the approach is same with a slight difference. Here we're going to use combination of MAX,COUNTIF and UNIQUE. **I've alrady explained this formula in the Solved File in detail make sure to check it out.**
+- To find Total Attendees and Total Sessions, the approach is same with a slight difference. Here we're going to use combination of MAX,COUNTIF and UNIQUE.
+
+**I've alrady explained this formula in the Solved File in detail make sure to check it out.**
 
 **Q4. Analyzing attendee demographics by country and tech field provides valuable insights into the global reach of the conference and the popularity of different tech fields in various regions. This information is essential for planning targeted marketing campaigns and expanding the conference's international presence. You need to calculate the total number of attendees from each country, for each Tech Field.**
 **A4**
