@@ -4,11 +4,13 @@ Global Conference Analytics using MS Excel.
 ## Problem Statement
 This project contains data related to global conference. The data set consists of speakers on different topics from different locations. As a data analyst, your task in hand is to find a suitable approach and solve the problems given in the attached file. Utilizing engaging storytelling techniques and visually appealing charts with interactive slicers, you'll effectively communicate the significance of the insights and their implications for future conference planning and engagement strategies.
 
-## Approach
-To find the solutions for all the problems asked in the dataset. Then, using those solution get insights and finally craft a dashboard.
+## Solutions and Approach
+To find the solutions for all the questions asked in the dataset of 3 sheets, 9 Questions. Then, using those solution get insights and finally craft a dashboard. **If you're practicing with same dataset and found yourself confused solving these Qs then my friend, I got you.**
 
-## Q1. The Customer Success Team is eager to gather feedback from attendees for post-conference assessment. They require personal information for a select group of attendees to initiate feedback requests. You are asked to provide them with the information of the below provided Attendee IDs.
+### Q1. The Customer Success Team is eager to gather feedback from attendees for post-conference assessment. They require personal information for a select group of attendees to initiate feedback requests. You are asked to provide them with the information of the below provided Attendee IDs.
+**A1** ![Screenshot 2024-11-21 213724](https://github.com/user-attachments/assets/5a3a62fd-3bad-4d5d-b7fd-8f4a59658840)
 
+The approach was simple to this Q, we've been given Lookup Values(Attendee ID) and with the help of Vlookup you can find all rhe info of each Attendee asked in this Q.
 
 ## Q2. The management seeks insights into the distribution of attendees across different Tech Fields represented at the conference. Understanding this distribution will help in tailoring future events to cater to specific interests and trends within the tech community. You need to calculate the total number of attendees for each Tech Field and then create a labelled bar chart for it, sorted in descending order.
 
