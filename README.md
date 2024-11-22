@@ -35,6 +35,7 @@ We will find the solutions for all the questions asked in the dataset of 3 sheet
 - Now taking Speaker ID as Lookup Value and Table Array(Speakers) and again using VLOOKUP you can find Speaker Name and Field of Expertise.
 
 **Q2. The management seeks insights into the distribution of attendees across different Tech Fields represented at the conference. Understanding this distribution will help in tailoring future events to cater to specific interests and trends within the tech community. You need to calculate the total number of attendees for each Tech Field and then create a labelled bar chart for it, sorted in descending order.**
+
 **A2** ![A2](https://github.com/user-attachments/assets/c58bc64c-0fc2-410e-a51a-cb66a2bedf85)
 
 - First we need to find all unique Tech Fields. By using UNIQUE on Tech Field column in Attendees sheet.
@@ -44,18 +45,16 @@ We will find the solutions for all the questions asked in the dataset of 3 sheet
 - select the table again and insert a Bar Graph from Insert Tab then customize the grapgh as you prefer.
 
 **Q3. Identifying the most and least popular speakers is crucial for understanding attendee preferences. By examining the number of attendees for each speaker, you can determine which sessions attracted the highest and lowest participation rates, thereby informing decisions for future speaker selection. For the speaker with maximum number of attendees and minimun number of attendes, you need to find the values for the below provided columns. Also, write your approach to get the solution.**
+
 **A3** ![A3](https://github.com/user-attachments/assets/05766edb-45d9-4391-a044-a89a4c789372)
 
 This Q is my favourite from all other Qs, to solve this Q:
 - First we need to find which Attendee joined which speaker by making a New Column(Speaker ID*) in Attendees sheet, using VLOOKUP in this column taking Session ID(Lookup Value) and Sessions sheet(Table Array).
 - Now this is a bit tricky part, we need to find Speaker ID with maximum and minimum number of attendees, Since there're no Lookup Values we will use a combination of INDEX, MATCH, COUNTIF, MAX and MIN functions. 
-
-**I've alrady explained this formula in the Solved File in detail make sure to check it out.**
-
+**(I've alrady explained this formula in the Global-Tech-Conference-Attendees-2023-(solved) in detail make sure to check it out.)**
 - Taking Speaker ID(Lookup value) we found earlier and Speakers sheet(Table Array) using VLOOKUP you can find Speaker Name, Country and Field of Expertise.
 - To find Total Attendees and Total Sessions, the approach is same with a slight difference. Here we're going to use combination of MAX,COUNTIF and UNIQUE.
-
-**I've alrady explained this formula in the Solved File in detail make sure to check it out.**
+**(I've alrady explained this formula in the Solved File in detail make sure to check it out.)**
 
 **Q4. Analyzing attendee demographics by country and tech field provides valuable insights into the global reach of the conference and the popularity of different tech fields in various regions. This information is essential for planning targeted marketing campaigns and expanding the conference's international presence. You need to calculate the total number of attendees from each country, for each Tech Field.**
 **A4**
