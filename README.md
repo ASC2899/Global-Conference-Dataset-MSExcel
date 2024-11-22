@@ -14,10 +14,14 @@ To find the solutions for all the questions asked in the dataset of 3 sheets, 9 
 - Then, Session ID as Lookup Value, and Table Array(Sessions) using Vlookup you can find Session Topic, Session Date and Speaker Id.
 - Now Speaker ID as Lookup Value and Table Array(Speakers) again using Vlookup you can find Speaker Name and Field of Expertise.
 
-## Q2. The management seeks insights into the distribution of attendees across different Tech Fields represented at the conference. Understanding this distribution will help in tailoring future events to cater to specific interests and trends within the tech community. You need to calculate the total number of attendees for each Tech Field and then create a labelled bar chart for it, sorted in descending order.
+### Q2. The management seeks insights into the distribution of attendees across different Tech Fields represented at the conference. Understanding this distribution will help in tailoring future events to cater to specific interests and trends within the tech community. You need to calculate the total number of attendees for each Tech Field and then create a labelled bar chart for it, sorted in descending order.
 **A2** ![A2](https://github.com/user-attachments/assets/c58bc64c-0fc2-410e-a51a-cb66a2bedf85)
 
-kk
+- First we need to find all unique Tech Fields. By using UNIQUE on Tech Field column in Attendees sheet.
+- Then, to calculate total number of attendees for each Tech Field we will use COUNTIF in which taking Tech field column from Attendee as Range and the unique Tech Fields we found earlier as Criteria.
+- Copy all the values found and paste under the Tech field and Attendee columns in Q2 Sheet.
+- Select the table and sort smallest to largest value. 
+- select the table again and insert a Bar Graph from Insert Tab then customize the grapgh as you prefer.
 
 ## Q3. Identifying the most and least popular speakers is crucial for understanding attendee preferences. By examining the number of attendees for each speaker, you can determine which sessions attracted the highest and lowest participation rates, thereby informing decisions for future speaker selection. For the speaker with maximum number of attendees and minimun number of attendes, you need to find the values for the below provided columns. Also, write your approach to get the solution.
 
