@@ -40,7 +40,7 @@ We will find the solutions for all the questions asked in the dataset of 3 sheet
 - Copy all the values found and paste under the Tech field and Attendee columns in Q2 Sheet.
 - Select the table and sort smallest to largest value. 
 - select the table again and insert a Bar Graph from Insert Tab then customize the grapgh as you prefer.
-- **Note: This Q can also be solved by using Pivot Table.**
+- **Note: This Q can also be solved by using Pivot Table but i wanted to prctice with Formulas.**
 
 **Q3. Identifying the most and least popular speakers is crucial for understanding attendee preferences. By examining the number of attendees for each speaker, you can determine which sessions attracted the highest and lowest participation rates, thereby informing decisions for future speaker selection. For the speaker with maximum number of attendees and minimun number of attendes, you need to find the values for the below provided columns. Also, write your approach to get the solution.**
 
@@ -55,7 +55,8 @@ This Q is my favourite from all other Qs, to solve this Q:
 
 **Q4. Analyzing attendee demographics by country and tech field provides valuable insights into the global reach of the conference and the popularity of different tech fields in various regions. This information is essential for planning targeted marketing campaigns and expanding the conference's international presence. You need to calculate the total number of attendees from each country, for each Tech Field.**
 
-**A4** ![A4](https://github.com/user-attachments/assets/8ecebd0a-91eb-4191-8db6-90fc525bfed5)
+**A4** 
+![A4](https://github.com/user-attachments/assets/8ecebd0a-91eb-4191-8db6-90fc525bfed5)
 
 Here we're going to use Pivot Table:
 - First, select the Attendee table then from Insert Tab create a Pivot Table. In that select Existing Sheet and click on Q4 sheet then select on any cell in Q4 sheet where you want the Pivot Table.
@@ -63,7 +64,12 @@ Here we're going to use Pivot Table:
 
 **Q5. For a deeper understanding of attendee engagement with specific speakers, you're tasked with compiling a list of attendees who attended sessions led by Speaker "SPK032". This information will help in assessing the impact and appeal of individual speakers among conference attendees. Find the list of all the Attendee IDs, who attended the sessions of Speaker "SPK032" and also provide the requested Attendee information.**
 
-**A5**
+**A5** ![A5](https://github.com/user-attachments/assets/8171e14a-37ab-43ed-b7f2-40e57a64e1fd)
+
+- This is the simplest Q. As we already created Speaker ID* column in Attendee column in Q3(First step).
+- Now apply Filters from Home Tab in he Header cells of each column in Attendees sheet.
+- Since we're asked to find info for Speaker ID SPK032, click on the filter of Speaker ID* column, search and select SPK032.
+- Copy the filtered values and paste them under the respected columns asked in Q5 sheet.
 
 **Q6. Understanding the occupations of conference attendees and ranking them by popularity provides insights into the diversity of professionals participating in the event. This analysis aids in identifying key target audiences and tailoring content to meet their specific needs and interests. You need to calculate the number of attendees for each occupation. Also give Rank to each occupation by their popularity (eg. Rank 1 to tech field with maximum number of attendees and so on).**
 **A6**
