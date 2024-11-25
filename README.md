@@ -22,7 +22,7 @@ To solve questions of this dataset you need to know the working knowledge of the
 - MIN
 - MAX
 
-## Solutions and Approach
+## Solutions and Approachs
 We will find the solutions for all the questions asked in the dataset of 3 sheets, 9 Questions. Then, use those solutions to get insights and finally craft a dashboard.
 
 **Q1. The Customer Success Team is eager to gather feedback from attendees for post-conference assessment. They require personal information for a select group of attendees to initiate feedback requests. You are asked to provide them with the information of the below provided Attendee IDs.**
@@ -39,7 +39,7 @@ We will find the solutions for all the questions asked in the dataset of 3 sheet
 - Then to calculate total number of attendees for each Tech Field, we will use COUNTIF in which taking Tech field column from Attendees sheet as Range and the unique Tech Fields we found earlier as Criteria.
 - Copy all the values found and paste under the Tech field and Attendee columns in Q2 Sheet.
 - Select the table and sort smallest to largest value. 
-- select the table again and insert a Bar Graph from Insert Tab then customize the grapgh as you prefer.
+- select the table again and insert a Bar Graph from Insert Tab then customize the graph as you prefer.
 - **Note: This question can also be solved by using Pivot Table but i wanted to practice with Formulas.**
 
 **Q3. Identifying the most and least popular speakers is crucial for understanding attendee preferences. By examining the number of attendees for each speaker, you can determine which sessions attracted the highest and lowest participation rates, thereby informing decisions for future speaker selection. For the speaker with maximum number of attendees and minimun number of attendes, you need to find the values for the below provided columns. Also, write your approach to get the solution.**
@@ -80,14 +80,33 @@ Here we're going to use Pivot Tables:
 
 **Q7. Identifying attendees who registered on a particular date offers insights into registration trends and the effectiveness of marketing efforts at different stages of event promotion. This information informs future registration strategies and resource allocation for promotional activities. Provide the list of all Attendee IDs and their respective names, who registed on "1-Mar-2022".**
 
-**A7**
+**A7** ![A7](https://github.com/user-attachments/assets/fb3278d4-f45f-497c-8472-2fbc39251771)
+
+- This question is same as Q5 but first we need to make a change on Registration Date column in Attendees sheet.
+- Select the column and press ctrl+1 to open Format Cells options, then click on Custom and type dd-mmm-yyyy, this will help us to find Attendee ID list for exactly 1-Mar-2022.
+- Filter this column for the date 1-Mar-2022, now copy all the Attendee ID and their Names that falls under this date and paste them in Q7 sheet.
 
 **Q8. Examining the distribution of speakers and sessions across different countries provides insights into the global diversity of conference content and the geographical reach of the event. This analysis informs decisions regarding speaker recruitment and session planning to ensure broad representation and appeal. You need to calculate total number of speakers for each country and total number of sessions they conducted and then create a labelled column chart for it.**
 
-**A8**
+**A8** ![A8](https://github.com/user-attachments/assets/8f0d032e-899d-4842-be99-a368df431ddd)
+
+- First we'll find Unique Country names from Speakers sheet using UNIQUE taking Country column from Speakers sheet as Range.
+- Now to calculate total number of speakers for each country we'll use COUNTIF in which taking Country column from Speakers sheet as Range and Unique Country names we found earlier as Criteria.
+- Before we move ahead we need to find which sessions took place in which country and since there's no Country column in Sessions sheet, we'll have to make Country* column.
+- now under this we'll apply VLOOKUP in which taking Session ID as Lookup Value and Speakers sheet as Table Array we'll get our distribution of country names across Session ID.
+- To calculate total number of sessions each speaker conducted in each country we'll again use COUNTIF in which taking Country* column from Sessions sheet as Range and Unique Country names we found earlier as Criteria. We finally got our Table.
+- Copy all the values and paste them under their respected columns in Q8 sheet.
+- Select the whole table, create a column chart from INSERT Tab and customize as you prefer.
 
 **Q9. Creating a column chart to visualize the distribution of experience levels within each tech field enables stakeholders to easily grasp the demographics of attendees in relation to their professional backgrounds. This visualization aids in identifying trends and opportunities for targeted engagement strategies. Create a Column Chart visualization to show the distribution of experience level in each tech field.**
 
-**A9**
+**A9** ![A9](https://github.com/user-attachments/assets/66f07e05-3877-4185-adb6-3ef6bfa5940d)
+Here we're gonna use Pivot Table again:
+- Select the Attendees table from Attendees sheet then from Insert Tab create a Pivot table. In that select Existing Sheet and click on Q9 sheet then select on any cell in Q9 sheet where you want the Pivot Table.
+- Now in Pivot Table Fields drag and drop Attendee ID in Values, Tech Field in Rows and Experience Level in Columns.
+- Copy Row and Column Labels with their values and paste them in a Table format.
+- Select the whole table, create a column chart from INSERT Tab and customize as you prefer.
 
 ## DASHBOARD
+
+![Dashboard](https://github.com/user-attachments/assets/7489ad90-e6f8-4b41-b16d-4be63362a974)
