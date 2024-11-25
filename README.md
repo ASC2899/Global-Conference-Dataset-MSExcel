@@ -63,7 +63,7 @@ Here we're going to use Pivot Tables:
 
 **Q5. For a deeper understanding of attendee engagement with specific speakers, you're tasked with compiling a list of attendees who attended sessions led by Speaker "SPK032". This information will help in assessing the impact and appeal of individual speakers among conference attendees. Find the list of all the Attendee IDs, who attended the sessions of Speaker "SPK032" and also provide the requested Attendee information.**
 
-**A5**![A5](https://github.com/user-attachments/assets/21cdc914-806e-477c-a5d8-45d533891534)
+**A5** ![A5](https://github.com/user-attachments/assets/21cdc914-806e-477c-a5d8-45d533891534)
 
 - This is the simplest question. As we've already created Speaker ID* column in Attendees sheet in Q3(First step).
 - Now we'll apply Filters from Home Tab in he Header cells of each column in Attendees sheet.
@@ -72,9 +72,7 @@ Here we're going to use Pivot Tables:
 
 **Q6. Understanding the occupations of conference attendees and ranking them by popularity provides insights into the diversity of professionals participating in the event. This analysis aids in identifying key target audiences and tailoring content to meet their specific needs and interests. You need to calculate the number of attendees for each occupation. Also give Rank to each occupation by their popularity (eg. Rank 1 to tech field with maximum number of attendees and so on).**
 
-**A6**
-
-![A6](https://github.com/user-attachments/assets/7645a54e-74f1-4c46-b07f-daaf07ead1d5)
+**A6** ![A6](https://github.com/user-attachments/assets/6e12fa00-ceee-4367-b897-028e339f88bb)
 
 - First we will use UNIQUE(Occupation column from Attendee sheet as Range) to find all unique occupations.
 - To calculate the number of attendees for each occupation, we will use COUNTIF in which taking Occupation column from Attendees sheet as Range and the unique Occupations we found earlier as Criteria.
