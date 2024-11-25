@@ -70,7 +70,7 @@ Here we're going to use Pivot Tables:
 - Since we're asked to find info for Speaker ID SPK032, click on the filter of Speaker ID* column, search and select SPK032.
 - Copy the filtered values and paste them under the respected columns asked in Q5 sheet.
 
-**Q6. Understanding the occupations of conference attendees and ranking them by popularity provides insights into the diversity of professionals participating in the event. This analysis aids in identifying key target audiences and tailoring content to meet their specific needs and interests. You need to calculate the number of attendees for each occupation. Also give Rank to each occupation by their popularity (eg. Rank 1 to tech field with maximum number of attendees and so on).**
+**Q6. Understanding the occupations of conference attendees and ranking them by popularity provides insights into the diversity of professionals participating in the event. This analysis aids in identifying key target audiences and tailoring content to meet their specific needs and interests. You need to calculate the number of attendees for each occupation. Also give Rank to each occupation by their popularity (eg. Rank 1 to tech field with maximum number of attendees and so on.).**
 
 **A6** ![A6](https://github.com/user-attachments/assets/6e12fa00-ceee-4367-b897-028e339f88bb)
 
